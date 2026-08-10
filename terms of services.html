@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | CLOUTÉ</title>
+  <meta name="description" content="CLOUTÉ Terms of Service — the agreement governing your use of the platform.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Rajdhani:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .legal-wrap{max-width:860px;margin:0 auto;padding:7rem 5vw 5rem;position:relative;z-index:2;}
+    .legal-eyebrow{font-family:'Rajdhani',sans-serif;font-size:.7rem;letter-spacing:.45em;text-transform:uppercase;color:var(--purple);display:block;margin-bottom:1.2rem;}
+    .legal-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:300;line-height:.95;color:var(--text);margin-bottom:.8rem;}
+    .legal-title em{font-style:italic;color:var(--purple);}
+    .legal-meta{font-family:'Rajdhani',sans-serif;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:3rem;display:block;}
+    .legal-divider{height:1px;background:linear-gradient(90deg,var(--purple),rgba(219,39,119,.3),transparent);margin-bottom:3rem;}
+    .legal-intro{font-size:1rem;color:var(--text);line-height:1.9;margin-bottom:2.5rem;font-weight:300;}
+    .legal-warning{padding:1.5rem 2rem;border:1px solid rgba(219,39,119,.25);border-radius:8px;background:rgba(219,39,119,.04);margin-bottom:2.5rem;font-size:.88rem;color:var(--muted);line-height:1.8;}
+    .legal-warning strong{color:var(--pink);}
+    .legal-section{margin-bottom:2.5rem;}
+    .legal-section-title{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;padding-bottom:.8rem;border-bottom:1px solid var(--border);}
+    .legal-num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:rgba(124,58,237,.25);line-height:1;flex-shrink:0;width:42px;}
+    .legal-section-title h2{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text);margin:0;}
+    .legal-body{color:var(--muted);font-size:.9rem;line-height:1.9;padding-left:3.5rem;}
+    .legal-body p{margin-bottom:.75rem;}
+    .legal-body strong{color:var(--text);}
+    .legal-body a{color:var(--purple);text-decoration:none;transition:opacity .2s;}
+    .legal-body a:hover{opacity:.7;text-decoration:underline;}
+    .legal-body ul{list-style:none;margin-bottom:.75rem;display:flex;flex-direction:column;gap:.5rem;}
+    .legal-body ul li{display:flex;gap:.75rem;align-items:flex-start;}
+    .legal-body ul li::before{content:'—';color:var(--purple);flex-shrink:0;font-family:'Cormorant Garamond',serif;}
+    .legal-contact-card{margin-top:3rem;padding:2rem 2.5rem;border:1px solid var(--border);border-radius:12px;background:rgba(124,58,237,.03);display:flex;align-items:center;gap:1.5rem;}
+    .legal-contact-card i{font-size:1.5rem;color:var(--purple);flex-shrink:0;}
+    .legal-contact-card p{font-size:.9rem;color:var(--muted);margin:0;line-height:1.7;}
+    .legal-contact-card a{color:var(--purple);text-decoration:none;}
+    .legal-links{display:flex;gap:1.2rem;flex-wrap:wrap;}
+    .legal-links a{font-family:'Rajdhani',sans-serif;font-size:.72rem;letter-spacing:.15em;color:var(--muted);text-decoration:none;text-transform:uppercase;transition:color .3s;}
+    .legal-links a:hover{color:var(--purple);}
+    @media(max-width:768px){.legal-wrap{padding:6rem 5vw 4rem;}.legal-body{padding-left:0;}.legal-contact-card{flex-direction:column;gap:1rem;}}
+    @media(max-width:480px){.legal-wrap{padding:5rem 1.2rem 3rem;}.legal-num{font-size:1.4rem;width:32px;}}
+  </style>
+</head>
+<body>
+
+  <!-- Dark/Light toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light mode">
+    <i class="fa fa-moon icon-moon"></i>
+    <i class="fa fa-sun icon-sun"></i>
+  </button>
+
+<div class="mob-nav" id="mob">
+  <button class="close-x" onclick="closeMob()" aria-label="Close menu"><i class="fa fa-times"></i></button>
+  <a href="index.html">Home</a>
+  <a href="index.html">About</a>
+  <a href="index.html">Features</a>
+  <a href="index.html">Invest</a>
+  <a href="privacy-policy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+</div>
+
+<nav id="navbar">
+  <div class="logo">Clouté</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Features</a></li>
+    <li><a href="index.html">Invest</a></li>
+    <li><a href="privacy-policy.html">Privacy</a></li>
+    <li><a href="terms.html" class="active">Terms</a></li>
+  </ul>
+  <a class="nav-cta" href="index.html">Get In Touch</a>
+  <button class="hamburger" onclick="openMob()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="blob b1" aria-hidden="true"></div>
+<div class="blob b2" aria-hidden="true"></div>
+
+<main>
+  <div class="legal-wrap">
+    <span class="legal-eyebrow">Legal</span>
+    <h1 class="legal-title">Terms of <em>Service</em></h1>
+    <span class="legal-meta">Updated: 03/20/2026 · Mechant Inc.</span>
+    <div class="legal-divider"></div>
+
+    <p class="legal-intro">Welcome to Mechant (the "Platform"), which is provided by <strong>Mechant Inc.</strong> in the United States (collectively referred to as "Mechant", "we" or "us").</p>
+
+    <div class="legal-warning">
+      <strong>Important:</strong> These terms contain an arbitration clause and a waiver of rights to bring a class action. Except for certain disputes, you and Mechant agree that disputes will be resolved by mandatory binding arbitration, and you waive any right to participate in a class-action lawsuit or class-wide arbitration.
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">01</span><h2>Your Relationship With Us</h2></div>
+      <div class="legal-body">
+        <p>You are reading the terms of service (the "Terms"), which govern the relationship and serve as an agreement between you and us. These Terms set forth the terms and conditions under which you may access and use the Platform as well as our related websites, services, applications, products, and content (collectively, the "Services").</p>
+        <p>Our Services are intended for personal, non-commercial use only. If you are under age 18, you may only use the Services with the consent of your parent or legal guardian.</p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">02</span><h2>Accepting the Terms</h2></div>
+      <div class="legal-body">
+        <p>By accessing or using our Services, you confirm that you can form a binding contract with Mechant, that you accept these Terms and that you agree to comply with them. Your access to and use of our Services is also subject to our <a href="privacy-policy.html">Privacy Policy</a>, incorporated herein by reference.</p>
+        <p>If you are accessing or using the Services on behalf of a business or entity, you represent and warrant that you are an authorized representative with the authority to bind the entity to these Terms.</p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">03</span><h2>Changes to the Terms</h2></div>
+      <div class="legal-body"><p>We amend these Terms from time to time when we update the functionality of our Services, combine services, or when there are regulatory changes. We will use commercially reasonable efforts to notify all users of any material changes. Your continued access or use of the Services after the date of new Terms constitutes your acceptance of them.</p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">04</span><h2>Your Account With Us</h2></div>
+      <div class="legal-body"><p>To access or use some of our Services, you must create an account with accurate and up-to-date information. Keep your account password confidential and do not disclose it to any third party. If you know or suspect that any third party has accessed your account, notify us immediately at <a href="/cdn-cgi/l/email-protection#4a392f293f38233e330a272f29222b243e64292527"><span class="__cf_email__" data-cfemail="0c7f696f797e6578754c61696f646d6278226f6361">[email&#160;protected]</span></a></p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">05</span><h2>Access to and Use of Our Services</h2></div>
+      <div class="legal-body">
+        <p>You agree that you are solely responsible for the activity that occurs under your account. We reserve the right to disable your account at any time if you fail to comply with these Terms.</p>
+        <p>You may not:</p>
+        <ul>
+          <li>Use the Services if you are not fully able and legally competent to agree to these Terms</li>
+          <li>Make unauthorized copies, modify, adapt, translate, reverse engineer, disassemble, or decompile the Services</li>
+          <li>Distribute, license, transfer, or sell, in whole or in part, any of the Services or derivative works</li>
+          <li>Market, rent or lease the Services for a fee or charge</li>
+          <li>Use the Services for any commercial or unauthorized purpose without our express written consent</li>
+          <li>Interfere with or disrupt the proper working of the Services or bypass any access restrictions</li>
+          <li>Use automated scripts to collect information from or interact with the Services</li>
+          <li>Impersonate any person or entity, or falsely state your affiliation with any person or entity</li>
+          <li>Intimidate or harass another, or promote sexually explicit material, violence or discrimination</li>
+          <li>Upload, transmit or distribute files that contain viruses, spam, defamatory, obscene, offensive, or hateful material</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">06</span><h2>Intellectual Property Rights</h2></div>
+      <div class="legal-body"><p>We respect intellectual property rights and ask you to do the same. All content, software, images, text, graphics, logos, trademarks, photographs, audio, videos, and "look and feel" of the Services (the "Mechant Content") are either owned or licensed by Mechant. Use of the Mechant Content for any purpose not expressly permitted by these Terms is strictly prohibited.</p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">07</span><h2>Content &amp; User-Generated Content</h2></div>
+      <div class="legal-body">
+        <p>Users may be permitted to upload, post or transmit content through the Services. The views expressed by users do not represent our views or values.</p>
+        <p>By submitting User Content, you warrant that you own that content or have received all necessary permissions from the owner. You grant Mechant an unconditional, irrevocable, non-exclusive, royalty-free, fully transferable, perpetual worldwide licence to use, modify, adapt, reproduce, publish and distribute your User Content on any platform.</p>
+        <p>We have the right to remove, disallow, block or delete any posting that does not comply with our content standards or these Terms. To submit a complaint about content: <a href="/cdn-cgi/l/email-protection#e0838f8e94858e94a08d858388818e94ce838f8d"><span class="__cf_email__" data-cfemail="5635393822333822163b33353e3738227835393b">[email&#160;protected]</span></a></p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">08</span><h2>Indemnity</h2></div>
+      <div class="legal-body"><p>You agree to defend, indemnify, and hold harmless Mechant, its parents, subsidiaries, and affiliates, and each of their respective officers, directors, employees, agents and advisors from any and all claims, liabilities, costs, and expenses, including attorneys' fees, arising out of a breach by you of these Terms.</p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">09</span><h2>Entire Agreement</h2></div>
+      <div class="legal-body"><p>These Terms constitute the whole legal agreement between you and Mechant and govern your use of the Services, completely replacing any prior agreements between you and Mechant in relation to the Services.</p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">10</span><h2>Links</h2></div>
+      <div class="legal-body"><p>You may link to our home page, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it. You must not establish a link to suggest any form of association, approval or endorsement on our part where none exists.</p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">11</span><h2>Security</h2></div>
+      <div class="legal-body"><p>We do not guarantee that our Services will be secure or free from bugs or viruses. You are responsible for configuring your information technology and computer programmes to access our Services. You should use your own virus protection software.</p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">12</span><h2>Dispute Resolution</h2></div>
+      <div class="legal-body">
+        <div class="legal-warning" style="margin-bottom:1rem;"><strong>Please read this section carefully.</strong> It requires you to arbitrate disputes with Mechant and limits the manner in which you can seek relief.</div>
+        <p><strong>A. Informal Resolution:</strong> Both parties must make a good faith effort to resolve any dispute informally before demanding arbitration or filing legal action. The party initiating the claim must notify the other in writing at <a href="/cdn-cgi/l/email-protection#056960626469456860666d646b712b666a68"><span class="__cf_email__" data-cfemail="0a666f6d6b664a676f69626b647e24696567">[email&#160;protected]</span></a> and both parties have 90 days to respond.</p>
+        <p><strong>B. Arbitration and Class Action Waiver:</strong> Any remaining dispute will be resolved by binding individual arbitration under the National Arbitration &amp; Mediation (NAM) Comprehensive Dispute Resolution Rules and Procedures. You and Mechant waive any right to have Claims decided on a class, collective, or representative basis.</p>
+        <p><strong>C. Exclusive Venue:</strong> To the extent litigation is permitted, you and Mechant agree that all Claims will be litigated exclusively in the U.S. District Court for the Central District of California or the Superior Court of the State of California, County of Los Angeles.</p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">13</span><h2>App Stores</h2></div>
+      <div class="legal-body">
+        <p><strong>Apple:</strong> By downloading from Apple's App Store, you acknowledge that Apple is not a party to these Terms and has no obligation to provide maintenance or support for the Platform.</p>
+        <p><strong>Google Play:</strong> By downloading from Google Play, you acknowledge that Google does not have any responsibility or liability related to compliance or non-compliance by Mechant or you under these Terms.</p>
+        <p><strong>Amazon Appstore:</strong> To the extent of any conflict between the Amazon Appstore EULA Terms and these Terms, the Amazon Appstore EULA Terms shall apply.</p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">14</span><h2>Contact Us</h2></div>
+      <div class="legal-body"><p>You can reach us at: <a href="/cdn-cgi/l/email-protection#3d51585a5c517d50585e555c5349135e5250"><span class="__cf_email__" data-cfemail="99f5fcfef8f5d9f4fcfaf1f8f7edb7faf6f4">[email&#160;protected]</span></a> or write to Mechant Inc. at the same address.</p></div>
+    </div>
+
+    <div class="legal-section">
+      <div class="legal-section-title"><span class="legal-num">15</span><h2>Severability</h2></div>
+      <div class="legal-body"><p>If any court rules that any provision of these Terms is invalid, that provision will be removed without affecting the rest of the Terms, and the remaining provisions will continue to be valid and enforceable.</p></div>
+    </div>
+
+    <div class="legal-contact-card">
+      <i class="fa fa-envelope"></i>
+      <p>Questions about these Terms? Contact us at <a href="/cdn-cgi/l/email-protection#3b575e5c5a577b565e58535a554f15585456"><span class="__cf_email__" data-cfemail="c7aba2a0a6ab87aaa2a4afa6a9b3e9a4a8aa">[email&#160;protected]</span></a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="f-logo">Clouté</div>
+  <p class="f-copy">Updated: 03/20/2026 · © 2026 Mechant Inc. All rights reserved.</p>
+  <div class="legal-links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+  </div>
+  <div class="f-soc">
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function openMob() {
+    document.getElementById("mob").classList.add("open");
+  }
+  function closeMob() {
+    document.getElementById("mob").classList.remove("open");
+  }
+</script>
